@@ -1,2 +1,6 @@
+# Unnecessary
 node_modules/
 dist/
+
+# Secret
+.env*
