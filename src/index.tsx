@@ -1,9 +1,12 @@
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import '@/index.css'
+
+// Components
+import { StrictMode } from 'react'
+import { Router } from '@/setup/tanstackRouter'
 
 // Setup
-import { Router } from '@/setup/tanstackRouter'
+import '@/index.css'
+import '@/setup/i18next'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
