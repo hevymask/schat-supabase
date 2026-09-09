@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import { cn } from '@/lib/shadcn/utils'
-import { safeNextPath } from '@/lib/safe-next-path'
+import { safeNextPath } from '@/lib/shadcn/safe-next-path'
 import { createClient } from '@/lib/shadcn/client'
 import { Button } from '@/components/shadcn/ui/button'
 import {
