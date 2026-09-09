@@ -6,7 +6,7 @@ import { initReactI18next } from "react-i18next"
 import en from "@/locale/en.json"
 import ja from "@/locale/ja.json"
 
-// Define i18next types
+// Define locale key types
 declare module 'i18next' {
   interface CustomTypeOptions {
     defaultNS: 'translation',

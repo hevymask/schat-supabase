@@ -1,4 +1,4 @@
-import RootProvider from '@/components/rootProvider'
+import RootProvider from '@/components/provider/root'
 
 export default function NotfoundPage() {
   return (

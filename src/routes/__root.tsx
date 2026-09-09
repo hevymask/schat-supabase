@@ -1,5 +1,5 @@
 import { Outlet, createRootRoute } from '@tanstack/react-router'
-import RootProvider from '@/components/rootProvider'
+import RootProvider from '@/components/provider/root'
 
 export const Route = createRootRoute({
   component: App
