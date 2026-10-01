@@ -16,7 +16,7 @@ declare module '@tanstack/react-router' {
   }
 }
 
-export function Router() {
+export default function() {
   return (
     <RouterProvider router={routes} />
   )

@@ -12,8 +12,9 @@ export default function RootProvider({ children }: { children: React.ReactNode }
 
   return (
     <div className='min-h-svh bg-background text-foreground'>
-      <AuthProvider />
-      {children}
+      <AuthProvider>
+        {children}
+      </AuthProvider>
     </div>
   )
 }

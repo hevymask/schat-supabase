@@ -6,6 +6,6 @@ export const Route = createFileRoute('/')({
 
 function App() {
   return (
-    <>This is the home page.</>
+    <>Hello "/"!</>
   )
 }

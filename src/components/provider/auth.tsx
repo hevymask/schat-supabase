@@ -1,13 +1,12 @@
 import { useEffect } from "react"
-import { useSetAtom, useAtom } from "jotai"
+import { useAtom } from "jotai"
 import { useNavigate } from '@tanstack/react-router'
 
 import supabase from "@/lib/supabase"
 import authAtom from "@/store/auth"
 
-export default function AuthProvider() {
-  const setAuth = useSetAtom(authAtom)
-  const [auth] = useAtom(authAtom)
+export default function AuthProvider({ children }: { children: React.ReactNode }) {
+  const [auth, setAuth] = useAtom(authAtom)
   const navigate = useNavigate()
 
   // Set auth state
@@ -43,5 +42,5 @@ export default function AuthProvider() {
     }
   }, [auth])
 
-  return null
+  return children
 }
