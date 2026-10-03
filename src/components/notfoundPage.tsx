@@ -1,3 +1,4 @@
+// Components
 import RootProvider from '@/components/provider/root'
 
 export default function NotfoundPage() {

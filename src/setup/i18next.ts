@@ -16,7 +16,7 @@ declare module 'i18next' {
   }
 }
 
-// Initialize
+// Init
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)

@@ -1,9 +1,8 @@
-import { RouterProvider, createRouter } from '@tanstack/react-router'
+import { RouterProvider as TanstackRouterProvider, createRouter } from '@tanstack/react-router'
 import { routeTree } from '@/routeTree.gen'
-
 import NotfoundPage from '@/components/notfoundPage'
 
-// Initialize
+// Init
 const routes = createRouter({
   routeTree,
   defaultNotFoundComponent: NotfoundPage
@@ -16,8 +15,8 @@ declare module '@tanstack/react-router' {
   }
 }
 
-export default function() {
+export default function RouterProvider() {
   return (
-    <RouterProvider router={routes} />
+    <TanstackRouterProvider router={routes} />
   )
 }
